@@ -71,7 +71,7 @@ body {
 /*header section*/
 .hero_area {
   height: 100vh;
-  background-color: #494141;
+  background-color: #162F27;
 }
 
 .hero_video {
@@ -728,6 +728,51 @@ a:focus {
   box-sizing: border-box;
 }
 
+#accordion{
+margin: 80px auto;
+width: 600px;
+}
+
+#accordion li{
+list-style: none;
+width: 100%;
+margin-bottom: 10px;
+background: #146244;
+padding: 10px;
+border-radius: 4px ;
+color: #ffffff;
+}
+#accordion li label{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fbca47;
+}
+#accordion li label span{
+  transform: rotate(90deg);
+  font-size: 22px;
+  
+  
+}
+
+#accordion label + input[type="radio"]{
+display: none;
+}
+#accordion .content{
+  padding: 0 10px;
+  line-height: 26px  ;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+#accordion label + input[type="radio"]:checked +.content{
+  max-height: 400px;
+}
+
 
 /* Define keyframes for slide animation */
 @keyframes slide {
@@ -784,8 +829,22 @@ a:focus {
 
 /* Style for the logo images */
 .logos-slide img {
-  height: 50px;
+  height: 150px;
   margin: 0 40px;
 }
 /* end footer section*/
-/*# sourceMappingURL=style.css.map */
+.collapse {
+  margin-bottom: 1rem;
+}
+
+.collapse-title {
+  cursor: pointer;
+}
+
+.collapse-content {
+  display: none;
+}
+
+input[type="radio"]:checked + .collapse-title + .collapse-content {
+  display: block;
+}

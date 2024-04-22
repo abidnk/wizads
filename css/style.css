@@ -233,8 +233,8 @@ a:focus {
 .slider_section .detail-box a {
   display: inline-block;
   padding: 10px 55px;
-  background-color: #00fae5b6;
-  border: 1px solid #ffffff;
+  background-color: #146244c9;
+  border: .23px solid #000000ad;
   color: #ffffff;
   border-radius: 20px 20px 0 20px;
   margin-top: 35px;
@@ -257,6 +257,35 @@ a:focus {
   border-radius: 100%;
   opacity: 1;
 }
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item a.nav-link {
+  position: relative;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item a.nav-link:after {
+  content: "";
+  position: absolute;
+  background-color: #146244;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: width 0.3s ease; /* Only transition width for smoother animation */
+}
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item a.nav-link:hover {
+  color: #ffffff;
+}
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item a.nav-link:hover:after {
+  width: 100%; /* Increase width on hover */
+}
+
 
 .do_section .heading_container {
   -webkit-box-align: center;
@@ -673,6 +702,7 @@ a:focus {
   width: 100%;
   padding: 7px 10px;
 }
+
 
 .info_section .info_form form button {
   display: inline-block;

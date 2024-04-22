@@ -4081,6 +4081,8 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-item {
   margin-bottom: -1px;
+  list-style: none;
+
 }
 
 .nav-tabs .nav-link {
@@ -4101,6 +4103,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
+  list-style: none;
   color: #495057;
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
@@ -4126,6 +4129,7 @@ input[type="button"].btn-block {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   text-align: center;
+  list-style: none;
 }
 
 .nav-justified .nav-item {
@@ -4133,6 +4137,8 @@ input[type="button"].btn-block {
   flex-basis: 0;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  list-style: none;
+
   text-align: center;
 }
 

@@ -858,9 +858,9 @@ display: none;
 }
 
 /* Pause slide animation on hover */
-.logos:hover .logos-slide {
+/* .logos:hover .logos-slide {
   animation-play-state: paused;
-}
+} */
 
 /* Style for the sliding logos */
 .logos-slide {
